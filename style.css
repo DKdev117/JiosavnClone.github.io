@@ -331,7 +331,13 @@ a {
     margin-top: 35px;
 }
 
+#volume {
+    margin-top: -60px;
+}
 
+#show-volume {
+    margin-top: -4px;
+}
 
 
 
