@@ -1,0 +1,130 @@
+@media  only screen and (max-width: 900px) {
+  body {
+    width: fit-content;
+  }
+
+  .navbar {
+    border-bottom: 1px solid #e9e9e9;
+    padding: 0 10px;
+    margin: -10px -10px 20px -10px;
+    margin-bottom: 0;
+  }
+
+  .navbar .jio_logo svg {
+    width: 100px;
+    margin: 25px 20px 10px;
+  }
+
+  .navbar input {
+    background-color: rgb(255, 255, 255);
+    padding: 10px -10px 10px 70px;
+    margin: -64px 0 0 290px;
+  }
+
+  .navbar .searchbar button {
+    margin: -64px 0 0 293px;
+  }
+
+  #Second-nav ul {
+    float: left;
+    margin: 1px 0 0 820px;
+    display: flex;
+    margin-top: -40px;
+    visibility: hidden;
+  }
+
+  .sidebar {
+    visibility: hidden;
+  }
+
+  .movie-list {
+    width: 36%;
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    margin-left: 10px;
+    margin-top: -600px;
+  }
+
+  #test {
+    margin-left: 10px;
+  }
+
+  .music_picker_bottom {
+    height: 120px;
+    width: 100%;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+  }
+
+  #range {   
+    visibility: hidden;
+   
+ }
+
+  .left{
+    width: 90%;
+    height: 10%;
+    margin-left: -30%;
+}
+
+.theme_img {
+  height: 80px;
+  margin-left: 194px;
+  margin-top: 100px;;
+}
+
+#songName {
+font-size: xx-large;
+  margin-top: 90px;
+}
+
+.music_icons {
+  margin: 5px 0 0 -590px;
+  width: 30%;
+  height: 100%;
+  font-size: xx-large;
+  
+}
+
+.right {
+  visibility: hidden;
+}
+}
+
+
+@media  only screen and (max-width: 915px) and (max-height:412px){
+
+  .movie-list {
+    width: 99%;
+    
+  }
+  .music_picker_bottom {
+    background-color: rgb(249, 249, 249);
+  }
+  .theme_img {
+    height: 100px;
+    margin-left: -500px;
+    margin-top: 110px;;
+  }
+
+  .music_icons {
+    margin: 5px 0 0 -1590px;
+    width: 20%;
+    font-size: large;
+    
+  }
+  .right {
+    visibility: visible;
+  }
+
+  #volume-icon{
+    margin-top: 19px;
+    font-size: large;
+  }
+}

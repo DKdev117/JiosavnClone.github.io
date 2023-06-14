@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
     <script
       src="https://kit.fontawesome.com/c32bb07b9a.js"
       crossorigin="anonymous"
@@ -90,8 +91,8 @@
                 <a href="https://www.jiosaavn.com/pro/?_marker=0">Go Pro</a>
               </li>
             </ul>
-            <div class="searchbar">
-              <input type="text" placeholder="Search" id="input-search" />
+            <div class="searchbar" >
+              <input type="text" placeholder="Search" id="input-search" onkeyup="serch()" />
               <button type="submit"><i class="fa fa-search"></i></button>
             </div>
 
@@ -324,7 +325,7 @@
         </div>
       </div>
       <div class="movie-list">
-        <div class="card1">
+        <div class="card">
           <img
             src="https://c.saavncdn.com/807/Pathaan-Hindi-2022-20221222104158-150x150.jpg?bch=468440"
             alt="Besharam Rang"
@@ -332,9 +333,9 @@
             id="0"
             onclick="changeImage()"
           />
-          <p class="ptext"></p>
+          <p class="ptext">Besharam Rang</p>
         </div>
-        <div class="card1">
+        <div class="card">
           <img
             src="https://c.saavncdn.com/357/Yadav-Brand-2-Hindi-2022-20220205133812-150x150.jpg"
             alt="Yadav Brand 2"
@@ -342,9 +343,9 @@
             id="1"
             onclick="changeImage()"
           />
-          <p class="ptext"></p>
+          <p class="ptext">Yadav Brand 2</p>
         </div>
-        <div class="card1">
+        <div class="card">
           <img
             src="https://c.saavncdn.com/824/Naseeb-Se-From-Satyaprem-Ki-Katha-Hindi-2023-20230526145336-150x150.jpg"
             alt="Naseeb Se (From Satyaprem Ki Katha)"
@@ -352,10 +353,10 @@
             id="2"
             onclick="changeImage()"
           />
-          <p class="ptext"></p>
+          <p class="ptext">Naseeb Se</p>
         </div>
 
-        <div class="card1">
+        <div class="card">
           <img
             src="https://c.saavncdn.com/916/Ram-Siya-Ram-From-Adipurush-Hindi-2023-20230530192919-150x150.jpg"
             alt="Ram Siya Ram (From Adipurush)"
@@ -363,9 +364,9 @@
             id="3"
             onclick="changeImage()"
           />
-          <p class="ptext"></p>
+          <p class="ptext">Ram Siya Ram</p>
         </div>
-        <div class="card1">
+        <div class="card">
           <img
             src="https://c.saavncdn.com/119/Major-Ajay-Krishna-Kannada-2021-20210108101001-150x150.jpg"
             alt="He's Soo Cute"
@@ -373,10 +374,10 @@
             id="4"
             onclick="changeImage()"
           />
-          <p class="ptext"></p>
+          <p class="ptext">He's Soo Cute</p>
         </div>
 
-        <div class="card1">
+        <div class="card">
           <img
             src="https://c.saavncdn.com/503/Baarish-Aayi-Hai-Hindi-2022-20220712053244-150x150.jpg"
             alt="Baarish Aayi Hai"
@@ -384,9 +385,9 @@
             id="5"
             onclick="changeImage()"
           />
-          <p class="ptext"></p>
+          <p class="ptext">Baarish Aayi Hai</p>
         </div>
-        <div class="card1">
+        <div class="card">
           <img
             src="https://c.saavncdn.com/815/Bhediya-Hindi-2022-20221206124543-150x150.jpg"
             alt="Apna Bana Le"
@@ -394,9 +395,12 @@
             id="6"
             onclick="changeImage()"
           />
-          <p class="ptext"></p>
+          <p class="ptext">Apna Bana Le</p>
         </div>
+        
       </div>
+     
+  
       </div>
     </div>
 
@@ -426,11 +430,10 @@
       </div>
 
       <div class="right">
-        <!-- <i class="fa-solid fa-ellipsis"></i> -->
         <p id="show-volume"></p>
         <i class="fa-sharp fa-solid fa-volume-high" id="volume-icon"></i>
         <input type="range" id="volume" min="0" max="100" value="" />
-        <!-- <i class="fa-solid fa-up-right-and-down-left-from-center"></i> -->
+       
       </div>
     </div>
 

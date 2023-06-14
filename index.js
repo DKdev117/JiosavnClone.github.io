@@ -264,3 +264,21 @@ function changeSound() {
   showVolume.value = currentVolume.value;
   audioElement.volume = currentVolume.value / 100;
 }
+
+//serch
+function serch() {
+  let filter = document.getElementById("input-search").value.toUpperCase();
+  let item = document.querySelectorAll(".card");
+  let p = document.getElementsByTagName("p");
+
+  for (var i = 0; i <= p.length; i++) {
+    let a = item[i].getElementsByTagName("p")[0];
+    let value = a.innerHTML || a.innerText || a.textContent;
+
+    if (value.toUpperCase().indexOf(filter) > -1) {
+      item[i].style.display = "";
+    } else {
+      item[i].style.display = "none";
+    }
+  }
+}
